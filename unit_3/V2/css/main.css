@@ -1,0 +1,219 @@
+/*CSS*/
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+/*LAYOUT*/
+
+.split {
+	height: 100%;
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.project-blocks img {
+	background-image: url(../img/desk.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+div.intro-outer {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+div.intro-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+
+
+/*TYPE*/
+
+.highlight {
+	font-size: 32px;
+	font-family: 'Arapey', serif;
+	color: #4C5151;
+	text-decoration: none;
+}
+
+.intro-middle mark {
+	background: red; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(left, #E6876B , #E25D5B); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #E6876B, #E25D5B); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #E6876B, #E25D5B); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #E6876B , #E25D5B); /* Standard syntax */
+  	color: #4C5151;
+}
+
+
+
+
+
+/*HEADER*/
+
+#header {
+	margin: 30px;
+	position: fixed;
+	top: 0;
+}
+
+#logo {
+	width: 50px;
+}
+
+
+
+
+
+/*INTRO*/
+
+#intro {
+	height: 100%;
+	width: 100%;
+}
+
+#intro-text {
+	position: relative;
+	top: 50%;
+}
+
+.intro-middle h1 {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 100px;
+	text-transform: uppercase;
+	color: #CDCFD4;
+	margin-bottom: 10px;
+	letter-spacing: 2;
+}
+
+.intro-middle p {
+	font-size: 32px;
+	font-family: 'Arapey', serif;
+	margin-left: 100px;
+	color: #4C5151;
+}
+
+
+
+
+
+/*PROJECTS*/
+
+.projects {
+	width: 100%;
+}
+
+.projects ul {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.projects li {
+	background: #f5f5f5;
+	height: 40%;
+	display: inline-block;
+	width: calc(100% / 2 - 10px);
+	margin-right: 3px;
+	margin-bottom: 3px;
+}
+
+.projects li:last-of-type {
+	margin-right: 0;
+}
+
+#personal-site-img {
+	background-image: url(../img/personal-site.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+
+
+
+/*FOOTER*/
+
+.footer {
+	/*position: fixed;
+	bottom: 0;*/
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+}
+
+div.footer-outer {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+div.footer-middle {
+  position: relative;
+  top: 27%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#email-me {
+	display: inline-block;
+	margin: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	float: left;
+	text-decoration: none;
+	color: #4C5151;
+	letter-spacing: .5;
+}
+
+.social-icons {
+	display: inline-block;
+	float: right;
+}
+
+svg.social-icons {
+	fill: #888;
+	width: 15px;
+	height: auto;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.social-icons ul li {
+	padding-right: 25px;
+	padding-top: 25px;
+	display: inline-block;
+	font-size: 12px ;
+	float: left;
+}
