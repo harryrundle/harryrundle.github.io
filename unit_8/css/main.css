@@ -91,16 +91,13 @@ header img {
 .image-grid {
 	width: 80%;
 	margin: auto;
+	margin-bottom: 115px;
 }
 
 .project-block {
 	width: 48%;
 	margin-bottom: 2%;
 	display: inline-block;
-}
-
-.project-block:last-of-type {
-	margin-bottom: 120px;
 }
 
 .project-block img {
