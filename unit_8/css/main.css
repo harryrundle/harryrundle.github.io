@@ -85,13 +85,12 @@ header img {
 
 #projects {
 	width: 100%;
-	color: blue;
 }
 
 .image-grid {
 	width: 80%;
 	margin: auto;
-	margin-bottom: 115px;
+	/*margin-bottom: 115px;*/
 }
 
 .project-block {
@@ -130,11 +129,8 @@ header img {
 
 footer {
 	width: 100%;
-	position: fixed;
-	bottom: 0;
 	background-color: #fff;
 	height: 120px;
-	background-color: red;
 }
 
 .mail-link {
