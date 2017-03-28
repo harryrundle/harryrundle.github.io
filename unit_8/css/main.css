@@ -133,6 +133,7 @@ header img {
 
 footer {
 	width: 100%;
+	position: fixed;
 	bottom: 0;
 	background-color: #fff;
 	height: 120px;
@@ -150,8 +151,7 @@ footer {
 .social-icons {
 	float: right;
 	padding-right: 30px;
-	padding-bottom: 30px;
-	margin-top: 53px;
+	line-height: 120px;
 }
 
 .social-icons li {
@@ -182,5 +182,9 @@ footer {
 		margin: 2% auto;
 		text-align: center;
 		display: block;
+	}
+
+	#intro div {
+		margin-left: 1.4em;
 	}
 }
