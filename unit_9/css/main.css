@@ -47,6 +47,10 @@ li {
 	top: 50%;
 }
 
+section {
+	width: 80%;
+	margin: 0 auto;
+}
 
 
 
@@ -80,29 +84,40 @@ header img {
 
 /*PROJECTS*/
 
-#projects {
-	width: 100%;
-}
-
 .image-grid {
-	width: 80%;
-	margin: auto;
-	margin-bottom: 115px;
+	text-align: center;
 }
 
 .project-block {
 	width: 48%;
 	margin: 0 2% 2% 0;
-	float: left;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 }
 
 .project-block:hover {
-	border: red;
+	opacity: .5;
+}
+
+.project-block:nth-of-type(even) {
+	margin-right: 0;
 }
 
 .project-block img {
 	width: 100%;
 	vertical-align: top;
+}
+
+.project-block a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /*TYPE*/
@@ -138,6 +153,7 @@ header img {
 
 
 
+
 /*SEE MORE*/
 
 .see-more {
@@ -160,6 +176,10 @@ header img {
 	border: 0;
 	background-color: #E6876B;
 	cursor: pointer;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 
 .CTA a {
@@ -174,10 +194,6 @@ header img {
 
 .CTA:hover {
 	background-color: #000;
-	-webkit-transition: background-color 0.1s;
-	-moz-transition: background-color 0.1s;
-	-o-transition: background-color 0.1s;
-	transition: background-color 0.5s;
 }
 
 
@@ -264,13 +280,10 @@ footer {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 900px) {
-	.image-grid {
-		width: 100%;
-	}
 
 	.project-block {
-		width: 80%;
-		margin: 2% auto;
+		width: 100%;
+		margin-bottom: 30px;
 		text-align: center;
 		display: block;
 	}
